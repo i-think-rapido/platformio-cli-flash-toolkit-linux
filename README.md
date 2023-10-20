@@ -10,9 +10,9 @@ The necessity for this approach is routed in the circumstance,
 that the Platform.io-IDE is not working properly on NixOS.
 
 The following walkthrough helps patching the `/dev` folder into
-the container, so it is available with root access.
+the docker container, so it is available with root access.
 
-For futher usage, we use the platformio CLI within the container.
+For further usage, we use the platformio CLI within the container.
 This wraps the toolchain in a consistant and safe environment.
 
 **Restrictions**
