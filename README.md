@@ -68,7 +68,7 @@ It is also relevant to check, if the container is running.
 Try this procedure first, when you have trouble setting up the
 development environment.
 
-# One-time setup of your project
+## One-time setup of your project
 
     For the following steps, it is assumed, that the 
     container is running.
@@ -81,7 +81,7 @@ First, we must setup your platformio project
 
 This ensures, that the project is properly set up.
 
-# Your Working Session
+## Your Working Session
 
 1. Init the project (once)
 
