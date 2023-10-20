@@ -4,6 +4,11 @@ This guide helps you set up a command line flashing environment for
 embedded systems supported by platformio for linux based systems
 (unfortunately not WSL).
 
+The idea for this development setup is, that you have the platformio IDE
+running on your system for editing the source code and having the 
+docker container of this repo active, while executing the update 
+shell script of this repository in a terminal console.
+
 ---
 
 The necessity for this approach is routed in the circumstance,
@@ -63,23 +68,27 @@ that the container is not running any more.
 <path-to-executable>/kill-docker.sh
 ```
 
-It is also relevant to check, if the container is running.
+It is also relevant to check, if the container is running during your work session.
 
 Try this procedure first, when you have trouble setting up the
 development environment.
 
 ## One-time setup of your project
 
-    For the following steps, it is assumed, that the 
-    container is running.
+With a new arduino project, we must prepare the project for usage with these scripts.
 
-First, we must setup your platformio project
+
+
+    For the following steps, it is assumed, that the container is already running.
 
 ```bash
 <path-to-executable>/install.sh
 ```
 
 This ensures, that the project is properly set up.
+
+Always repeat this step, when your change values in the `platformio.ini` config file,
+like changing the board or the baud rate in your platformio IDE.
 
 ## Your Working Session
 
@@ -91,8 +100,7 @@ This ensures, that the project is properly set up.
 
 2. Upload your flash image (repeated)
 
-    Make sure, that you set your embedded device in upload mode
-    for the second step.
+    Make sure, that you set your embedded device in upload mode for the second step.
 
 ```bash
 <path-to-executable>/uplaod.sh /dev/ttyUSB0
