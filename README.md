@@ -43,8 +43,8 @@ Usually this is `/dev/ttyUSB0`, but can be different,
 depending on circumstances on your OS.
 
 The presense of this device ensures the proper patching into the
-docker container. If you try to spin up the container before the USB device is attached to the computer, it won't be availabe in 
-the container later on despite you reattache your device. 
+docker container. If you try to spin up the container before the USB device is attached to the computer, 
+it won't be availabe in the container despite you attached your device at a later point in time. 
 (This is a common mistake, so be warned.)
 
     All following commands have to be executed within
