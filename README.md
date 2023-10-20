@@ -6,8 +6,9 @@ embedded systems supported by platformio for linux based systems
 
 The idea for this development setup is, that you have the platformio IDE
 running on your system for editing the source code and having the 
-docker container of this repo active, while executing the update 
-shell script of this repository in a terminal console.
+docker container of this repo active, while executing the flash command
+of this repository in a terminal console as described later in this readme 
+file.
 
 ---
 
