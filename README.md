@@ -1,6 +1,6 @@
 # Platformio CLI in a Docker Container with convenience Shell Scripts
 
-This guide helps you set up a command line flashing environment of 
+This guide helps you set up a command line flashing environment for 
 embedded systems supported by platformio for linux based systems
 (unfortunately not WSL).
 
