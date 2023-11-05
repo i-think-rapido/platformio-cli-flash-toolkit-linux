@@ -104,7 +104,7 @@ like changing the board or the baud rate in your platformio IDE.
     Make sure, that you set your embedded device in upload mode for the second step.
 
 ```bash
-<path-to-executable>/uplaod.sh /dev/ttyUSB0
+<path-to-executable>/uplaod.sh
 ```
 (Set the device name to your needs.)
 
