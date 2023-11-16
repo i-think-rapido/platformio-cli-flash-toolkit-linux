@@ -62,15 +62,6 @@ So, at the start of your programming session, you have to spin up the container 
 <path-to-executable>/run-docker.sh
 ```
 
-When you finish your programming session, you should always ensure
-that the container is not running any more.
-
-```bash
-<path-to-executable>/kill-docker.sh
-```
-
-It is also relevant to check, if the container is running during your work session.
-
 Try this procedure first, when you have trouble setting up the
 development environment.
 
