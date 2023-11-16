@@ -36,7 +36,8 @@ Other installation guides must be looked up on the internet.
 First we need to create the docker image.
 
 ```bash
-docker build --tag pio .
+# in this projects folder
+./build.sh
 ```
 
 ## Working on your Project
@@ -59,7 +60,8 @@ it won't be availabe in the container despite you attached your device at a late
 So, at the start of your programming session, you have to spin up the container each time.
 
 ```bash
-<path-to-executable>/run-docker.sh
+# in the platformio projects folder
+<path-to-this-project>/run-docker.sh
 ```
 
 Try this procedure first, when you have trouble setting up the
@@ -74,7 +76,8 @@ With a new arduino project, we must prepare the project for usage with these scr
     For the following steps, it is assumed, that the container is already running.
 
 ```bash
-<path-to-executable>/install.sh
+# in the platformio projects folder
+<path-to-this-project>/install.sh
 ```
 
 This ensures, that the project is properly set up.
@@ -87,7 +90,8 @@ like changing the board or the baud rate in your platformio IDE.
 1. Init the project (once)
 
 ```bash
-<path-to-executable>/init.sh
+# in the platformio projects folder
+<path-to-this-project>/init.sh
 ```
 
 2. Upload your flash image (repeated)
@@ -95,7 +99,8 @@ like changing the board or the baud rate in your platformio IDE.
     Make sure, that you set your embedded device in upload mode for the second step.
 
 ```bash
-<path-to-executable>/uplaod.sh
+# in the platformio projects folder
+<path-to-this-project>/uplaod.sh
 ```
 (Set the device name to your needs.)
 
